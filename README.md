@@ -21,21 +21,12 @@ npm install
 ```
 
 ### 3. ตั้งค่า Supabase
-- สมัครบัญชีที่ [supabase.com](https://supabase.com/) และสร้างโปรเจกต์ใหม่
-- คัดลอก **API URL** และ **Anon Key**
+
 - สร้างไฟล์ `.env` ที่ root ของโปรเจกต์และเพิ่มค่า:
   ```env
   REACT_APP_SUPABASE_URL=your_supabase_url
   REACT_APP_SUPABASE_ANON_KEY=your_anon_key
   ```
-- สร้างตาราง `history` ใน Supabase โดยมีคอลัมน์ดังนี้:
-  - `id` (UUID, Primary Key)
-  - `rowsy` (Integer)
-  - `colsx` (Integer)
-  - `wincon` (Integer)
-  - `winner` (Text)
-  - `gameplay` (JSON)
-  - `created_at` (Timestamp, default: now)
 
 ### 4. รันโปรเจกต์
 ```sh
